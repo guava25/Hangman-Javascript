@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Hangman</title><link rel="stylesheet" href="css/style.css">
+</head>
+
+  <body>
+
+<div class="wrapper">
+   <h1>Hangman</h1>
+    <h2>JavaScript Hangman Game</h2>
+    <p>Use the alphabet</p>
+    <p>Get all the letters, and win!</p>
+    <p>Refresh to play again!</p>
+</div>
+<select id="select1" onchange="play(this.value);">
+    <option value="-">Select a Category</option>
+  <option value="0">Countries</option>
+  <option value="1">Continents</option>
+  <option value="2">Cities</option>
+</select>
+<div id="main" class="wrapper">
+    <div id="buttons">
+    </div>  
+    <p id="catagoryName"></p>
+    <div id="hold">
+    </div>
+    <p id="mylives"></p>
+</div>
+<script src="js/index.js"></script>    
+</body>
+</html>
